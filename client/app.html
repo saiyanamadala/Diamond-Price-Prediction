@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diamond Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<form class="form">
+    <h2>Carat</h2>
+    <input class="Carat" type="text" id="uiCarat" class="floatLabel" name="carat">
+    <h2>Table</h2>
+    <input class="Table" type="text" id="uiTable" class="floatLabel" name="table">
+    <h2>Depth</h2>
+    <input class="Depth" type="text" id="uiDepth" class="floatLabel" name="depth">
+    <h2>Cut Quality</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-cut-fair" name="cut" value="Fair"/>
+        <label for="radio-cut-fair">Fair</label>
+        <input type="radio" id="radio-cut-good" name="cut" value="Good" checked/>
+        <label for="radio-cut-good">Good</label>
+        <input type="radio" id="radio-cut-verygood" name="cut" value="Very Good"/>
+        <label for="radio-cut-verygood">Very Good</label>
+        <input type="radio" id="radio-cut-premium" name="cut" value="Premium"/>
+        <label for="radio-cut-premium">Premium</label>
+        <input type="radio" id="radio-cut-ideal" name="cut" value="Ideal"/>
+        <label for="radio-cut-ideal">Ideal</label>
+    </div>
+    
+    <h2>Color</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-color-j" name="color" value="J"/>
+        <label for="radio-color-j">J</label>
+        <input type="radio" id="radio-color-i" name="color" value="I" checked/>
+        <label for="radio-color-i">I</label>
+        <input type="radio" id="radio-color-h" name="color" value="H"/>
+        <label for="radio-color-h">H</label>
+        <input type="radio" id="radio-color-g" name="color" value="G"/>
+        <label for="radio-color-g">G</label>
+        <input type="radio" id="radio-color-f" name="color" value="F"/>
+        <label for="radio-color-f">F</label>
+        <input type="radio" id="radio-color-e" name="color" value="E"/>
+        <label for="radio-color-e">E</label>
+        <input type="radio" id="radio-color-d" name="color" value="D"/>
+        <label for="radio-color-d">D</label>
+    </div>
+    <h2>Clarity</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-clarity-i1" name="clarity" value="I1"/>
+        <label for="radio-clarity-i1">I1</label>
+        <input type="radio" id="radio-clarity-si2" name="clarity" value="SI2" checked/>
+        <label for="radio-clarity-si2">SI2</label>
+        <input type="radio" id="radio-clarity-si1" name="clarity" value="SI1"/>
+        <label for="radio-clarity-si1">SI1</label>
+        <input type="radio" id="radio-clarity-vs2" name="clarity" value="VS2"/>
+        <label for="radio-clarity-vs2">VS2</label>
+        <input type="radio" id="radio-clarity-vs1" name="clarity" value="VS1"/>
+        <label for="radio-clarity-vs1">VS1</label>
+        <input type="radio" id="radio-clarity-vvs2" name="clarity" value="VVS2"/>
+        <label for="radio-clarity-vvs2">VVS2</label>
+        <input type="radio" id="radio-clarity-vvs1" name="clarity" value="VVS1"/>
+        <label for="radio-clarity-vvs1">VVS1</label>
+        <input type="radio" id="radio-clarity-if" name="clarity" value="IF"/>
+        <label for="radio-clarity-if">IF</label>
+    </div>
+    
+    <h2>X</h2>
+    <input class="x" type="text" id="uiX" class="floatLabel" name="x">
+    <h2>Y</h2>
+    <input class="y" type="text" id="uiY" class="floatLabel" name="y">
+    <h2>Z</h2>
+    <input class="z" type="text" id="uiZ" class="floatLabel" name="Z">
+    <div>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>    
+        
+    </div>
+	<div id="uiEstimatedPrice" class="result"> <h2></h2> </div>
+</form>
+</body>
+</html>
