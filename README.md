@@ -16,6 +16,9 @@ The Diamond Price Prediction project is a web application developed to predict t
 #### Machine Learning Model
 The heart of the application is a machine learning model trained on a dataset containing various attributes of diamonds, such as carat weight, cut, color, clarity, and depth. The model, implemented using Python and Scikit-Learn, is trained to predict the price of diamonds based on these features. After training, the model is serialized and saved to a pickle file for easy integration with the web application.
 
+#### **Hyper Parameter Tuning**
+Hyperparameter tuning was employed to optimize the performance of the machine learning model. After thorough experimentation, the DecisionTreeRegressor was selected as the best model, utilizing the optimal hyperparameters identified through the tuning process. This approach ensured that the model achieved maximum accuracy and robustness in predicting diamond prices.
+
 #### Web Application
 The web application is built using Flask, a lightweight Python web framework, to provide the backend functionality. Flask routes handle user requests, passing input data to the machine learning model for prediction. The frontend interface is designed using HTML, CSS, and JavaScript.
 
